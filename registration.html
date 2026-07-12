@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors.css">
+</head>
+<body>
+    <header class="header" id="header"></header>
+
+    <main class="main-registration">
+        <div class="registration-container">
+            <h1 class="registration__title">Регистрация нового пользователя</h1>
+            
+            <form id="registrationForm" class="registration__form">
+                <div class="form__group">
+                    <label for="fullName" class="form__label">ФИО</label>
+                    <input type="text" id="fullName" name="fullName" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="birthDate" class="form__label">День рождения</label>
+                    <div class="date-input-wrapper">
+                        <input type="text" id="birthDate" name="birthDate" class="form__input" placeholder="дд.мм.гггг" required>
+                        <span class="calendar-icon">📅</span>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" id="email" name="email" class="form__input" required>
+                    <div class="form__hint">Email будет использоваться для входа в систему</div>
+                </div>
+
+                <div class="form__group">
+                    <label for="password" class="form__label">Пароль</label>
+                    <input type="password" id="password" name="password" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="confirmPassword" class="form__label">Повторите пароль</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="form__input" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            </form>
+        </div>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
