@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/toast.css">
+</head>
+<body>
+    <header class="header" id="header"></header>
+
+    <main class="main-profile">
+        <div class="profile-container">
+            <h1 class="profile__title">Профиль</h1>
+            
+            <form id="profileForm" class="profile__form">
+                <div class="form__group">
+                    <label for="fullName" class="form__label">ФИО</label>
+                    <input type="text" id="fullName" name="fullName" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label">Email</label>
+                    <div class="email-display" id="emailDisplay"></div>
+                </div>
+
+                <div class="form__group">
+                    <label for="birthDate" class="form__label">День рождения</label>
+                    <div class="date-input-wrapper">
+                        <input type="text" id="birthDate" name="birthDate" class="form__input" placeholder="дд.мм.гггг">
+                        <span class="calendar-icon">📅</span>
+                    </div>
+                </div>
+
+                <div class="form__actions">
+                    <button type="submit" class="btn btn-primary">Изменить</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/common.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/toast.js"></script>
+</body>
+</html>
