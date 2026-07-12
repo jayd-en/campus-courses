@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Группы курсов</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/groups.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/toast.css">
+</head>
+<body>
+    <header class="header" id="header"></header>
+
+    <main class="main-groups">
+        <div class="groups-container">
+            <h1 class="groups__title">Группы кампусных курсов</h1>
+            
+            <div class="groups__actions" id="groupsActions">
+                <button id="createGroupBtn" class="btn btn-primary">Создать</button>
+            </div>
+
+            <div class="groups__list" id="groupsList">
+                <!-- js -->
+            </div>
+        </div>
+    </main>
+
+    <div id="groupModal" class="modal">
+        <div class="modal__container">
+            <div class="modal__header">
+                <h2 id="modalTitle" class="modal__title">Редактирование группы</h2>
+                <button class="modal__close">&times;</button>
+            </div>
+            <div class="modal__divider"></div>
+            <div class="modal__body">
+                <label class="modal__label">Название группы</label>
+                <input type="text" id="groupNameInput" class="modal__input" placeholder="Введите название группы">
+            </div>
+            <div class="modal__divider"></div>
+            <div class="modal__footer">
+                <button id="modalCancelBtn" class="btn btn-secondary1">Отмена</button>
+                <button id="modalSaveBtn" class="btn btn-primary">Сохранить</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/groups.js"></script>
+    <script src="js/toast.js"></script>
+</body>
+</html>
