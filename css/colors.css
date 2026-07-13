@@ -1,0 +1,22 @@
+:root {
+    --bg-header: #60656b;
+    --text-secondary: #ffffff;
+    --text-dark: #2a2f33;
+    --bg-primary: #ffffff;
+    --bg-disabled: #e9ecef;
+    --btn-primary: #0d6efd;
+    --border-color: #ced4da;
+    --text-muted: #6c757d;
+    --btn-warning: #ffc107;
+    --btn-danger: #dc3545;
+    --btn-secondary: #6c757d;
+    --btn-success: #198754;
+    --status-open: #198754;
+    --status-in-progress: #0d6efd;
+    --status-created: #6c757d;
+    --status-closed: #dc3545;
+    --status-important: #e40f2534;
+    --queque: #007bff;
+    --accept: #28a745;
+    --reject: #dc3545;
+}

@@ -1,0 +1,89 @@
+.main-registration {
+    padding: 30px 20px;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+}
+
+.registration-container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.registration__title {
+    font-size: 2rem;
+    font-weight: 620;
+    margin-bottom: 40px;
+    color: var(--text-dark);
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form__label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-dark);
+}
+
+.form__input {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    width: 100%;
+}
+
+.form__input:focus {
+    outline: none;
+    border-color: var(--btn-primary);
+}
+
+.form__hint {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.date-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.date-input-wrapper .form__input {
+    padding-right: 40px;
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 12px;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    width: auto;
+}
+
+.btn-primary {
+    background-color: var(--btn-primary);
+    color: var(--text-secondary);
+    align-self: flex-start;
+}
